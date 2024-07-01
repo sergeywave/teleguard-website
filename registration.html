@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Регистрация в личном кабинете </title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="body white-page">
+
+  <div class="wrapper">
+
+    <header class="header">
+
+      <div class="header-wrap _container">
+
+        <a href="/" class="header-logo">
+          <img src="img/logo.svg" alt="logo" width="100" height="100">
+        </a>
+
+        <nav class="header-nav">
+          <ul>
+            <li> <a href="#features"> Преимущества </a> </li>
+            <li> <a href="#tariffs"> Тарифы </a> </li>
+            <li> <a href="#reviews"> Отзывы </a> </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn get-access-btn get-access-btn_desctop">Получить доступ</a>
+
+        <button class="header__burger" type="button" aria-label="Мобильное меню">
+          <span></span>
+        </button>
+
+
+      </div>
+
+    </header>
+
+  <main class="main">
+
+    <section class="content registration-section">
+
+      <div class="content-wrap _container">
+
+        <div class="content-wrap__left">
+
+          <h1 class="content-h1">регистрация в личном кабинете</h1>
+
+          <div class="registration-title"> <span class="gradient-text">Введите ваши данные</span> для отслеживания результатов и получения программы</div>
+
+          <div class="registration-subtitle">Мы уважаем вашу конфиденциальность и очень серьезно
+            относимся к ее защите - никакого спама!</div>
+
+            <form id="registration-form" class="registration-form" action="/">
+
+              <div class="reg-form-wrap">
+
+                <div class="form__item">
+                  <input type="text" placeholder="Имя" required>
+                </div>
+
+                <div class="form__item">
+                  <input type="email" placeholder="Email" required>
+                </div>
+
+                <button class="registration-form__btn btn" type="submit">Далее</button>
+
+              </div>
+
+              <div class="form__item form__item-checkbox">
+                <input id="confirm-legal" class="form-checkbox" type="checkbox" required="">
+                <label class="confirm-policy-label" for="confirm-legal">Принимаю пользовательское соглашение,
+                  соглашаюсь с офертой, правилами
+                  сервиса, тарифами и рекуретными
+                  платежами.</label>
+              </div>
+
+             <div class="form__item form__item-checkbox">
+              <input id="confirm-offer" class="form-checkbox" type="checkbox" required="">
+              <label class="confirm-policy-label" for="confirm-offer">Нажимая кнопку "Далее" Вы подтверждаете ознакомление с автоматическими списаниями.
+                Первое списание в размере 1990р через 3 дня после подписки и далее, согласно тарифу
+                раз в 7 дней 1990р или частичное списанеи 990р за 3 дня доступа в личный кабинет.</label>
+             </div>
+
+          </form>
+
+        </div>
+
+        <div class="content-wrap__right">
+
+          <div class="pay-info">
+
+            <p>Принимаем к оплате:</p>
+
+            <img src="img/cards.svg" alt="cards">
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-wrap _container">
+
+
+      <div class="footer-wrap-top">
+
+        <a href="/" class="footer-logo">
+          <img src="img/logo.svg" alt="logo" width="100" height="100">
+        </a>
+
+        <nav class="footer-nav">
+          <ul>
+            <li> <a href="#"> Преимущества </a> </li>
+            <li> <a href="#"> Тарифы </a> </li>
+            <li> <a href="#"> Отзывы </a> </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn get-access-btn get-pay-btn">Оплата</a>
+
+      </div>
+
+      <div class="footer-wrap-bottom">
+
+        <div class="footer__copyright">
+          <p>teleguard.online © 2023</p>
+          <p>Все права защищены. Перепечатка
+            и цитирование материалов запрещены.
+            По всем вопросам пишите на gmail.com</p>
+          <p>Этот веб-сайт использует cookies</p>
+        </div>
+
+
+        <div class="footer-wrap-center__bottom">
+          <p>Принимаем к оплате:</p>
+          <img src="img/cards.svg" alt="cards">
+        </div>
+
+        <ul class="footer-legal-links">
+          <li><a href="user-agreement.html">Пользовательское соглашение</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#" class="manage-subscriptions">Управление подпиской</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <div class="popup__wrapper">
+
+    <div class="popup-unsubscription" id="features">
+      <button class='btn__close-popup popup-unsubscription__btn' type='button'></button>
+      <div class="popup__wrap">
+        <div class="popup-success__title"> ОТМЕНА ПОДПИСКИ НА СЕРВИС </div>
+        <form id="unsibscribe-form" class="unsibscribe-form" action="/">
+
+            <div class="form__item">
+              <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="form__item">
+              <input type="text" placeholder="Первые 6 цифр карты" maxlength="6" required>
+            </div>
+
+            <div class="form__item">
+              <input type="text" placeholder="Последние 4 цифры карты" maxlength="4" required>
+            </div>
+
+            <button class="unsibscribe-form__btn btn" type="submit">Отписаться</button>
+        </form>
+     </div>
+    </div>
+
+  </div>
+
+
+
+
+<script src="js/main.js"></script>
+
+
+
+</div>
+
+</body>
+</html>
+
+
